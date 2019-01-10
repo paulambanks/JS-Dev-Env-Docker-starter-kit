@@ -1,13 +1,18 @@
 version: "3.2"
 services:
   app:
-    image: node:8.15.0-alpine
+    image: node:paula
     build: .
     volumes:
-      - ./:/app
+      - ./.babelrc/:/app/.babelrc
+      - ./.eslintrc.json/:/app/.eslintrc.json
+      - ./webpack.config.dev.js:/app/webpack.config.dev.js
+      - ./buildScripts/:/app/buildScripts
+      - ./src/:/app/src
     working_dir: /app
     environment:
       NODE_ENV: development
     ports:
       - "3000:3000"
     command: npm start
+

@@ -1,5 +1,4 @@
-
-# JavaScript Template
+# JavaScript Template [![Build Status](https://travis-ci.org/paulambanks/JS-Dev-Env-Docker-starter-kit.svg?branch=develop)](https://travis-ci.org/paulambanks/JS-Dev-Env-Docker-starter-kit)
 
 NodeJs development with Docker (Webpack 4 + ES6 + Babel 7)
 
