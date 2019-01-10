@@ -5,14 +5,14 @@ NodeJs development with Docker (Webpack 4 + ES6 + Babel 7)
 ## Layout
 
 * Dockerfile (Describes how to build the Docker image)
-* docker-compose.yml (Launches the apache webserver on port 80 and the 'src' directory is mapped to '/var/www/html')
-* xdebug-custom.ini (Allows XDebug to connect to the host on port 9000, so IDE's can use XDebug)
+* docker-compose.yml (Launches the node webserver on port 3000)
 * src (JS application sources go here)
-* src/index.html (Prints "Hello World")
+* src/index.html (Prints "Hello World!")
 * Express.js (Web application framework for Node.js)
 * ES6+ based JavaScript.
 * Babel 7 and babel-loader (transpiling the ES6+ source code into ES5 style code; babel-loader has been used with webpack for compiling/transpiling purpose)
-* Webpack 4 (for executing babel transpiler and bundling JavaScript  files into a single file)
+* Webpack 4 (for executing babel transpiler and bundling JavaScript files into a single file)
+* Travis for CI
 
 ### Quick Commands
 
